@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  }
+  </script>
+<style>
+table {
+  border: 1px;
+  border-collapse: collapse;
+}
+</style>
+</head>
+
+<body>
+<table width="100%";>
+<tr>
+  <td><a href="page23.html">Page 23</a></td>
+  <td align="right"><a href="page25.html">Page 25</a></td>
+</tr>
+</table>
+<h2>The HTML &lt;head&gt; Element</h2>
+<p>The &lt;head&gt; elemment is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</p>
+<p>HTML metadata is data about the HTML document. Metadata is not displayed</p>
+<p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+<p>The following tags describe metadata: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;</p>
+
+<hr>
+
+<h2>The HTML &lt;title&gt; Element</h2>
+<p>The &lt;title&gt; element defines the title of the document, and is required in all HTML documents.</p>
+<p>The &lt;title&gt; element: </p>
+<ul>
+  <li>defines a title in the browser tab</li>
+  <li>provides a title for the page when it is added to favorites</li>
+  <li>displays a title for the page in search engine results</li>
+</ul>
+<p>A simple HTML document:</p>
+
+<p><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+The content of the document......
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre></p>
+
+<hr>
+
+<h2>The HTML &lt;style&gt; Element</h2>
+<p>The &lt;style&gt; element is used to define style information for a single HTML page:</p>
+<p><pre>
+&lt;style&gt;
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+&lt;/style&gt;
+</pre></p>
+
+<hr>
+<h2>The HTML &lt;link&gt; Element</h2>
+<p>The &lt;link&gt; element is used to link to external style sheets:</p>
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+
+<hr>
+<h2>The HTML &lt;meta&gt; Element</h2>
+<p>The &lt;meta&gt; element is used to specify which character set is used, page description, keywords, author, and other metadata.</p>
+<p>Metadata is used by browers (how to display content), by search engines (keywords), and other web servies.</p>
+<p>Define the character set used:</p>
+<p>  &lt;meta charset="UTF-8"&gt;</p>
+<p>Define a description of your web page:</p>
+<p>  &lt;meta name="description" content="Free Web tutorials"&gt;</p>
+<p>Define keywords for search engines:</p>
+<p>  &lt;meta name="keywords" content="HTML, CSS, XML, JavaScript"&gt;</p>
+<p>Define the author of a page:</p>
+<p>  &lt;meta name="author" content="John Doe"&gt;</p>
+<p>Refresh document every 30 seconds:</p>
+<p>  &lt;meta http-equiv="refresh" content="30"</p>
+<p>Example of &lt;meta&gt; tags:</p>
+<p>  &lt;meta charset="UTF-8"&gt;</p>
+<p>  &lt;meta name="description" content="Free Web tutorials"&gt;</p>
+<p>  &lt;meta name="keywords content="HTML,CSS,XML,JavaScript&gt;</p>
+<p>  &lt;meta name="author" content="John Doe"&gt;</p>
+
+<hr>
+
+<h2>Setting the Viewport</h2>
+<p>HTML% introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag.
+The viewport is the</p>
+<p>The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.</p>
+<p>You should include the following &lt;meta&gt; viewport element in all your web pages:</p>
+<table>&lt;meta name="viewport" content="width=device-width, intial-scale=1.0"&gt;</table>
+<p>A &lt;meta&gt; viewpprt element gives the browser instructions on how to control the page's dimensions and scaling.</p>
+<p>The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device)</p>
+<p>The intial-scale=1.0 part sets the intial zoom level when the page is first loaded by the browser.</p>
+<p>Here is a an example of a web page without the viewport meta tag, and the same web page with the viewport &lt;meta&gt; tag:</p>
+
+<hr>
+
+<h2>The HTML &lt;script&gt; Element</h2>
+<p>The &lt;script&gt; element is used to define client-side-JavaScripts.</p>
+<p>This JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+<p><pre>
+&lt;head&gt;
+&lt;script&gt;
+function myFunction {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+&lt;/script&gt;
+&lt;/head/&gt;
+&lt;body&gt;
+&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+&lt;/body&gt;
+</pre></p>
+
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<p>The script should be included in the &lt;head&gt; tag and indented, but does not make a difference if it is not.</p>
+
+<hr>
+
+<h2>The HTML &lt;base&gt; Element</h2>
+<p>The &lt;base&gt; element specifies the base URL and base target for all relative URLs in a page:</p>
+<p><pre>
+&lt;base href="https://www.w3schools.com/images/ target="_blank"&gt;
+&lt;base href="https://www.w3schools.com/images/" target="_blank"&gt;
+&lt;img src="html5.gif"&gt;
+&lt;p&gt;Since we have specified a base URL, the browser will look for the image "html5.gif" at "https://www.w3schools.com/images/html5.gif"&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.w3schools.com"&gt;W3Schools&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The link above opens in a new window. This is because the base target is set to "_blank".&lt;/p&gt;
+</pre></p>
+<p>Other targets will be discussed later.</p>
+
+<hr>
+
+<h2>Omitting &lt;html&gt;, &lt;head&gt;, and &lt;body&gt;</h2>
+<p>According to the HTML5 standard, the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags can be omitted.</p>
+<p>The following code will validate as HTML5:</p>
+<p><pre>
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</pre></p>
+<p>Note to self: But why would we ever want to leave it out in the first place? ;)</p>
+<p>However, apparently motting the&lt;head&gt; tag has been a common practice for quite some time now.</p>
+
+<hr>
+
+<h2>HTML head Elements</h2>
+<table>
+<tr>
+  <td>Tag</td>
+  <td>Description</td>
+</tr>
+<tr>
+  <td>&lt;head&gt;</td>
+  <td>Defines information about the document</td>
+</tr>
+<tr>
+  <td>&lt;title&gt;</td>
+  <td>Defines the title of a document</td>
+</tr>
+<tr>
+  <td>&lt;base&gt;</td>
+  <td>Defines a default address or a default target of all links of a page</td>
+</tr>
+<tr>
+  <td>&lt;link&gt;</td>
+  <td>Defines the relationship between a document and an external resource</td>
+</tr>
+<tr>
+  <td>&lt;meta&gt;</td>
+  <td>Defines metadata about an HTML document</td>
+</tr>
+<tr>
+  <td>&lt;script&gt;</td>
+  <td>Defines a client-side script</td>
+</tr>
+<tr>
+  <td>&lt;style&gt;</td>
+  <td>Defines style information for a document</td>
+</tr>
+</table>
+<p>For a complete list of head elements, see <a href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a></p>
+<p>Side note: Adding in and taking out a target="blank" white refreshing pages can ause errors, but only if listed as a inline css. If it is put into the head like where it's suppose to be, there should be no issues.</p>
+
+<table width="100%";>
+<tr>
+  <td><a href="page23.html">Page 23</a></td>
+  <td align="right"><a href="page25.html">Page 25</a></td>
+</tr>
+</table>
+
+</body>
+</html>

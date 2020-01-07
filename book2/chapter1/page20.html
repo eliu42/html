@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<table width="100%;">
+<tr>
+<td><a href="page19.html">page19</a></td>
+<td align="right"><a href="page21.html">page21</a></td>
+</tr>
+</table>
+
+<h2 id="C4">Chapter 4</h2>
+<h1>HTML The id Attribute</h1>
+
+<h2>Using The id attribute</h2>
+<p>The id attribute specifies a unique id for an HTML element (there can only be one in the entire file).</p>
+<p>The id value can be used by CSS and JavaScript to perform certain tasks for the element with the specfic id value.</p>
+<p>In CSS, to select an element with a specific id, write a hash (3) character, followed by the id of the element:</p>
+
+<p><pre>
+&lt;style&gt;
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+&lt;style&gt;
+
+&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;
+</pre></p>
+
+<h1 id="myHeader">My Header</h1>
+
+<hr>
+
+<h2>Difference Between Class and ID</h2>
+<p>An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:</p>
+<p><pre>
+&lt;style&gt;
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: bloack;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color:white;
+  padding: 10px;
+}
+&lt;/style&gt;
+
+&lt;!-- A unique element --&gt;
+&lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt;
+
+&lt;!-- Multiple similar elements --&gt;
+&lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan&lt;/p&gt;
+</pre></p>
+
+<h1 id="myHeader">My Cities</h1>
+<h1 id="myHeader">What Happens</h1>
+<!-- Multiple similar elements -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan</p>
+
+<p>Note, with testing it seems like even though it says id can only be limited to one element, having multiple elements with the same id does not seem to have undefined behaviors.</p>
+<p>However, with further testing it seems that javascript functions take just the first id. If done in a loop (not sure how yet, might be able to grab all id's. For example, with 3 different elements with the same id, the first call to the first id found only is applied by the function.</p>
+
+<hr>
+
+<h2>Bookmarks with ID and Links</h2>
+<p> HTML bookmarks are used to allow readers to jump to specific parts of a Web Page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the bookmark.</p>
+
+<h2>Example</h2>
+<p>First, create a bookmark with the id attribute:</p>
+<p>&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;</p>
+<p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+<a href="#C4">Jump to Chapter 4</a>
+<p>Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</p>
+<h2>Example</h2>
+<a href="page1.html">Jump to page 1</a>
+
+<h2>
+
+<h2 id="jsid">Using the id attribute in Javascript</h2>
+<p>Caution! Id's are in plain, while the links must contain a '#'</p>
+
+<hr>
+
+<h2>Using the id attribute in Javascript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+<button onclick="displayResult()">Change text</button>
+
+<p>Note, with testing it seems like even though it says id can only be limited to one element, having multiple elements with the same id does not seem to have undefined behaviors.</p>
+<p>However, with further testing it seems that javascript functions take just the first id. If done in a loop (not sure how yet, might be able to grab all id's. For example, with 3 different elements with the same id, the first call to the first id found only is applied by the function.</p>
+
+
+<hr>
+<table width="100%;">
+<tr>
+<td><a href="page19.html">page19</a></td>
+<td align="right"><a href="page21.html">page21</a></td>
+</tr>
+</table>
+</html>

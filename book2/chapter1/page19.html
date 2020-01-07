@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span {
+  color: orange;
+  background-color: blue;
+}
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<table width="100%;">
+  <tr>
+    <td><a href="page18.html">Page 18</a></td>
+    <td align="right"><a href="page20.html">Page 20</a></td>
+  </tr>
+</table>
+<h1>Using the Class Attribute</h1>
+<p>The HTML <span>class</span> attribute is used to define equal styles for elements with the same class name.</p>
+<p>So, all HTML elements with the same <span>class</span> attribute will get the same style.</p>
+<p>Here we have three <span>&lt;div&gt;</div> elements that point to the same class name:
+
+<hr>
+<p><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  pading: 20px;
+}
+&lt;style&gt;
+&lt;head&gt;
+&lt;body&gt;
+
+&lt;div class="cities"&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="cities"&gt;
+  &lt;h2&gt;Paris&lt;/h2&gt;
+  &lt;p&lt;Paris is the capital of France.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="cities"&gt;
+  &lt;h2&gt;Tokyo&lt;/h2&gt;
+  &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></p>
+
+<hr>
+<div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<hr>
+<h1>Using the Class Attribute on Inline Elements</h1>
+<div><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+span.note {
+  font-size: 120%;
+  color: red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+
+<style>
+span.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+
+<hr>
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  text-align: center;
+}
+</style>
+</hr>
+
+<hr>
+<h1>Multiple Classes</h1>
+<p>HTML elements can have more than one class name, each class name must be separated by a space.</p>
+<p>All three headers have the class name "city". in addition, London also have the class name "main", which center-aligns the text.</p>
+
+<hr>
+<p><pre>
+&lt;style&gt;
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;h2 class="city main"&gt;London&lt;/h2&gt;
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;h2 class="city:&gt;Tokyo&lt;/h2&gt;
+
+&lt;/body&gt;
+</pre></p>
+
+<hr>
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+<p>An element can inherit from more than one class.</p>
+
+<hr>
+<h1>Different Tags Can Share The Same Class</h1>
+<p>Different tags, like &lt;h2&gt; and &lt;p&gt;, can have the same class name and thereby share the same style:</p>
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+<p><pre>
+A nice script to hide elements by their class name:
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</pre></p>
+
+<hr>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var x = document.getElementsByClassName("cities");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+<button onclick="myFunction()">Hide elements</button>
+
+<hr>
+<table width="100%;">
+  <tr>
+    <td><a href="page17.html">Page 17</a></td>
+    <td align="right"><a href="page19.html">Page 19</a></td>
+  </tr>
+</table>
+</body>

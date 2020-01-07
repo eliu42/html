@@ -1,0 +1,68 @@
+<!-- Tables do not have default borders.-->
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  border-spacing: 5px;
+}
+</style>
+
+<p>Note, inline html modification is not possible due to the word: border-collapse. Need to find a way to write the character "-"</p>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <th>Ezekiel</th>
+    <th>Liu</th>
+    <th>22</th>
+  </tr>
+  <tr>
+    <th>Schteilyx</th>
+    <th>Ghould</th>
+    <th>0</th>
+  </tr>
+</table>
+
+<p>Tables are default without borders. Syntax: border="px" followed by a number for pixels wide the border to be. Default color, black, solid.</p>
+
+<table style="width:100%", border="1px">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <th>Ezekiel</th>
+    <th>Liu</th>
+    <th>22</th>
+  </tr>
+  <tr>
+    <th>Schteilyx</th>
+    <th>Ghould</th>
+    <th>0</th>
+  </tr>
+</table>
+<p>Padding is the space between the contents inside its cell and its borders.</p>
+
+<table style="width:100%", border="1px", padding="15px">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <th>Ezekiel</th>
+    <th>Liu</th>
+    <th>22</th>
+  </tr>
+  <tr>
+    <th>Schteilyx</th>
+    <th>Ghould</th>
+    <th>0</th>
+  </tr>
+</table>

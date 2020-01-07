@@ -1,0 +1,29 @@
+<a href="page7.html">Page 7</a>
+<img src="../../images/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<p>The following is an image map so that multiple links may be embedded inside one image.</p>
+<p>The only difference is that we must use the 'usemap' attribute: 'usemap="workmap"'</p>
+<p>The 'usemap' value starts with a hash tag '#' followed by the name of the image map, and is used to create a relationship between the image and the image map.</p>
+<h1>The Map</h1>
+<p>Then, add a 'map' element. The 'map' element is used to create an image map, and is linked to the image by using the name attribute:<br>&lt;map name="workmap"&gt;</p>
+<p>The 'name' attribute must have the same value as the 'usemap' attribute.</p>
+<h1>The Area</h1>
+<p>A clickable area is defined using an 'area' element.</p>
+<h2>Shape</h2>
+<ul>
+  <li>rect - defines a rectangular region</li>
+  <li>circle - defines a circular region</li>
+  <li>poly - defines a polygonal region</li>
+  <li>default - defines the entire region</li>
+</ul>
+
+<h1>Image Map and JavaScript</h1>
+<p>You can use the 'onclick' attribute to execute a JavaScript function when the area is clicked."
+<p>&lt;area shape="circle coords="337,300,44" onclick="myFunction()"&gt;</p>
+<a href="page9.html">Page 9</a>
