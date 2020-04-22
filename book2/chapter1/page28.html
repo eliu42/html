@@ -7,6 +7,10 @@ span#div {
 	background-color: gainsboro;
 	border: none;
 }
+p#notice {
+	background-color: lightgoldenrodyellow; 
+
+}
 </style>
 </head>
 <body>
@@ -119,15 +123,87 @@ span#div {
 <p>A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.</p>
 <p>You may have several <span>footer</span> elements in one document.</p>
 
-<hr>
-
-<h4>Example</h4>
+<h3>Example</h3>
 <footer>
-	<p>Posted by: Hege Refsnes</p>
-	<p>Contact information: <a href="mailto:someone@example.com">
-	someone@example.com</a></p>
+	<p>Posted by Hege Refsnes</p>
+	<p><Contact information: <a href="mailto:someone@example.com">
+	somoene@example.com</a>.</p>
+</footer>
+
 <hr>
 
+<h2>HTML &lt;nav&gt; Element</h2>
+<p id="notice">The &lt;nav&gt; element defines a set of navigation links</p>
+<h4>Example</h4>
+<pre>
+<code>
+<nav>
+	<a href="/html"/>HTML</a> |
+	<a href="/css/">CSS</a> |
+	<a href="/js/">JavaScript</a>
+	<a href="/jquery/">jQuery</a>
+</nav>
+</code>
+</pre>
+
+<h2>HTML aside Element</h2>
+<p>The <span id="div">aside</span> element defines some content aside from the content it is [laced in (like a sidebar).</p>
+<p>The <span id="div">aside</span> content should be related to the surround content.</p>
+<hr>
+
+<h3>Example<h3>
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+	<h4>Epcot Center</h4>
+	<p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+
+<hr>
+
+<h2>HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
+<p>An image and a caption can be grouped together in a <span id="div">figure</span></p>
+<p>The purpose of a caption is to add a visual explanation to an image.</p>
+
+<h3>Example</h3>
+<pre><code><figure>
+<img src="pic_trulli.jpg" alt="Trulli">
+	<figcaption>Fig1. - Trulli, Puglia, Italy. </figcaption>
+</figure></code></pre>
+
+<p>The <span id="div">img</span> element defines the image, the <span id="div">figcaption</span> element defines the caption.</p>
+
+<h2>Why Semantic Elements</h2>
+<p>According to the W3C: "A semantic Web allows data to be shared and resused across applictions, enterprises, and communities."</p>
+
+<hr>
+
+<h2>Semantic Elements in HTML</h2>
+<p>Below is an alphabetical list of some of the semantic elements in HTML</p>
+<p>The links go to our complete <a href="https://www.w3schools.com/tags/default.asp">HTML Reference</a><hr>
+
+<hr>
+
+<table width="100%"></table>
+<tr>
+	<b>Tag</b><b>Description</b>
+</tr>
+	<tr><td>&lt;article&gt;</td><td>Defines an article</td></tr>
+	<tr><td>&lt;aside&gt;</td><td>Defines content aside from the page content</td></tr>
+	<tr><td>&lt;details&gt;</td><td>Defines additional details that the user can view or hide.</td></tr>
+	<tr><td>&lt;figcaption&gt;</td><td>Defines a caption for a &lt;figure&gt;</td></tr>
+	<tr><td>&lt;figure&gt;</td><td>Defines a footer for a document or section</td></tr>
+	<tr><td>&lt;footer&gt;</td><td>Specifies a header for a document ror section</td></tr>
+	<tr><td>&lt;header&gt;</td>Specifies a header for a document or section</td></tr>
+	<tr><td>&lt;main&gt;</td>Specifies the main content of a document</td></tr>
+	<tr><td>&lt;mark&gt;</td><td>Defines marked/highlighted tet</td></tr>
+	<tr><td>&lt;nav&gt;</td><td>Defines navigation links</td></tr>
+	<tr><td>&lt;section&gt;</td><td>Defines section in a document</td></tr>
+	<tr><td>&lt;summary&gt;</td><td>Defines a visible heading for &lt;details&gt; element</td></tr>
+	<tr><td>&lt;time&gt;</td><td>Defines a date/time</td></tr>
+</tr>
+
+<p id="notice"></p>
 <table width="100%">
 	<tr>
 		<td><a href="page27.html">Page 27</a></td>
