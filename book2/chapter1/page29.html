@@ -1,0 +1,224 @@
+<!-- DOCTYPE html -->
+<html>
+<head>
+<style>
+div#foo {
+	background-color: lightgoldenrodyellow;
+}
+</style>
+</head>
+<body>
+<table width="100%">
+	<tr>
+		<td><a href="page28.html">Page 28</a></td>
+		<td><a href="page30.html">Page 30</a></td>
+	</tr>
+<table>
+
+<h1>HTML Entities</h1>
+<hr>
+
+<p>Reserved characters in html must be replaced with character entities.</p>
+<p>Characters that are not present on your keyboard can also be replaced by entities.
+
+<hr>
+
+<h2>HTML Entities</h2>
+<p>Some characters are reserved in html</p>
+<p>If you see the less than (&#60) or greater than (&#62) signs in your text, the browser might mix them with tags.</p>
+<p>Character entities are used to display reserved characters in HTML.</p>
+<p>A Character entity looks like this:</p>
+
+<pre>
+&entity_name;
+OR
+&#entity_number;
+</pre>
+
+<hr>
+
+<div id="foo">Advantage of using an entity name: An entity name is easy to remember. Disadvantage of using an entity name: Browsers may not support all entity names, but the support for numbers is good.</div>
+
+<hr>
+
+<h2>Non-breaking Space</h2>
+<p>A common character entity used in html is the non-breaking space: &nbsp;</p>
+<p>A non-breaking space is a space that will not break into a new line.</p>
+<p>Two words seperated by a non-breaking space will stick togerther (not break into a new line). This is handy when breaking the words might be disruptive.</p>
+<p>Examples:</p>
+<ul>
+	<li>§ 10</li>
+	<li>10 km/h</li>
+	<li>10 PM</li>
+</ul>
+
+<p>Another common use of the non-breaking space is to prevent browsers from truncating spaces in html pages.</p>
+<p>If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces in your text, you can use the &nbsp;character entity.</p>
+
+<hr>
+
+<p>The non-breaking hyphen (&#8209) lets you use a hypen character (-) that won't break.</p>
+
+<h2>Some other Useful HTML Character Entities</h2>
+<table width="100">
+<tr>
+	<th><b>Result</b></th>
+	<th><b>Description</b></th>
+	<th><b>Entity Name</b></th>
+	<th><b>Entity Number</b></th>
+</tr>
+<tr>
+	<td>&#160;</td>
+	<td>non-breaking space</td>
+	<td>&nbsp;</td>
+	<th>&#160;</td>
+</tr>
+<tr>
+	<td>&#60;</td>
+	<td>less than</td>
+	<td>&lt;</td>
+	<td>&#60;</td>
+</tr>
+<tr>
+	<td>&#62;</td>
+	<td>greater than</td>
+	<td>&lt;</td>
+	<td>&#62;</td>
+</tr>
+<tr>
+	<td>&#38;</td>
+	<td>ampersand</td>
+	<td>&amp;</td>
+	<td>&#38;</td>
+</tr>
+<tr>
+	<td>&#34;</td>
+	<td>double quotaton mark</td>
+	<td>&quot;</td>
+	<td>&#34;</td>
+</tr>
+<tr>
+	<td>&#39;</td>
+	<td>cent</td>
+	<td>&cent;</td>
+	<td>&#162;</td>
+</tr>
+<tr>
+	<td>&#163;</td>
+	<td>pound</td>
+	<td>&pound;</td>
+	<td>&#163;</td>
+</tr>
+<tr>
+	<td>&#163;</td>
+	<td>yen</td>
+	<td>&yen;</td>
+	<td>&#165;</td>
+</tr>
+<tr>
+	<td>&#8364;</td>
+	<td>euro</td>
+	<td>&euro;</td>
+	<td>&#8364;</td>
+</tr>
+<tr>
+	<td>&#169;</td>
+	<td>copyright</td>
+	<td>&copy;</td>
+	<td>&#169;</td>
+</tr>
+<tr>
+	<td>&#174;</td>
+	<td>copyright</td>
+	<td>&copy;</td>
+	<td>&#169;</td>
+</tr>
+<tr>
+	<td>&#174;</td>
+	<td>registered trademark</td>
+	<td>&reg;</td>
+	<td>&#174;</td>
+</tr>
+
+</table>
+
+<!-- Can you go slower than me? -->
+<p><b>Note</b> Entity names are case sensitive.</p>
+<h2>Combining Diacritical Marks</h2>
+
+<p>A diacritical mark is a "glyph" added to a letter.</p>
+<p>Some diacritical marks, like grave (`) and acute (´) are called accents.</p>
+<p>Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.</p>
+<p>Diacritical marks can be used in combination with alphanumeric characters to produce a character this is not present in the character set (encoding) used in the page.</p>
+<p>Here are some examples:</p>
+
+<table>
+<tr>
+	<td><b>Mark</b></td>
+	<td><b>Character</b></td>
+	<td><b>Construct</b></td>
+	<td><b>Result</b></td>
+</tr>
+<tr>
+	<td>`</td>
+	<td>a</td>
+	<td>a&#768;</td>
+	<td>a&#768;</td>
+</tr>
+<tr>
+	<td>´</td>
+	<td>a</td>
+	<td>a&#769;</td>
+	<td>a&#769;</td>
+</tr>
+<tr>
+	<td>^</td>
+	<td>a</td>
+	<td>a&#770;</td>
+	<td>a&#770;</td>
+</tr>
+<tr>
+	<td>~</td>
+	<td>a</td>
+	<td>a&#771;</td>
+	<td>a&#771;</td>
+</tr>
+<tr>
+	<td>`</td>
+	<td>O</td>
+	<td>a&#768;</td>
+	<td>a&#768;</td>
+</tr>
+<tr>
+	<td>´</td>
+	<td>O</td>
+	<td>a&#769;</td>
+	<td>a&#769;</td>
+</tr>
+<tr>
+	<td>^</td>
+	<td>O</td>
+	<td>a&#770;</td>
+	<td>a&#770;</td>
+</tr>
+<tr>
+	<td>~</td>
+	<td>O</td>
+	<td>a&#771;</td>
+	<td>a&#771;</td>
+</tr>
+
+
+</table>
+
+<hr>
+
+<table width="100%">
+	<tr>
+		<td><a href="page28.html">Page 28</a></td>
+		<td><a href="page30.html">Page 30</a></td>
+	</tr>
+<table>
+</body>
+</html>
+
