@@ -1,0 +1,39 @@
+<!-- DOCTYPE html -->
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<table width="100%">
+	<tr>
+		<td><a href="symbols.html">symbols.html</a></td>
+		<td><a href="html_emojis.html">Using Emojis in HTML</a></td>
+	</tr>
+</table>
+
+<hr>
+
+<h1>Using Emojis in HTML</h1>
+
+<hr>
+
+😄 😍 💗
+
+<hr>
+
+<h2>What are emojis?</h2>
+<p>Emojis look like images, or icons, but they are not.</p>
+<p>They are letters (characters) from the UTF-8 (Unicode) alphabet.</p>
+<p></p>
+
+<hr>
+
+<table width="100%">
+	<tr>
+		<td><a href="symbols.html">symbols.html</a></td>
+		<td><a href="html_emojis.html">Using Emojis in HTML</a></td>
+	</tr>
+</table>
+</body>
+</html>

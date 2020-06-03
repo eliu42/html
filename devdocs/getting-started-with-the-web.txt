@@ -1,0 +1,6 @@
+HTML elements consist of the content surrnounded by opening and closing tags.
+Elements can contain attributes, which have an attribute name, and an attribute value.
+Elements can be within other elements, and this is called nesting.
+Some elements hae no content, and are called empty elements.
+
+
